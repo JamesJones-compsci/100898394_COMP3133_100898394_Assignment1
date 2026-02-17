@@ -27,3 +27,13 @@ You can use the following account for testing:
 {
   "query": "mutation { signup(username: \"jae\", email: \"jae@example.com\", password: \"123456\") { id username email } }"
 }
+
+Comments / Notes
+
+All critical employee fields are validated and auto-filled using fixEmployees.js to prevent GraphQL query errors.
+
+Use Cloudinary URLs for employee photos when testing addEmployee.
+
+Ensure login is performed before executing mutations that require authentication.
+
+Sample credentials can be reused for multiple tests without conflicts.
